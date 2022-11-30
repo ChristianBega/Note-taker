@@ -1,0 +1,48 @@
+User Story :: 
+
+AS A small business owner
+I WANT to be able to write and save notes
+SO THAT I can organize my thoughts and keep track of tasks I need to complete
+
+
+Acceptance Criteria :: 
+
+GIVEN a note-taking application
+
+WHEN I open the Note Taker
+THEN I am presented with a landing page with a link to a notes page
+
+WHEN I click on the link to the notes page (click event)
+THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
+
+WHEN I enter a new note title and the note’s text (two user input)
+THEN a Save icon appears in the navigation at the top of the page (Dom manipulation // class constructor )
+
+WHEN I click on the Save icon (click event)
+THEN the new note I have entered is saved (local storage // push to db??) and appears (dom manipulation) in the left-hand column with the other existing notes
+
+WHEN I click on an existing note in the list in the left-hand column (click event)
+THEN that note appears in the right-hand column (dom manipulation)
+
+WHEN I click on the Write icon in the navigation at the top of the page (click event)
+THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column (dom manipulation)
+
+
+
+
+1. fs module import 
+2. routes : 
+    a. GET /notes returns notes.html
+    b. GET * ("/") returns index.html
+
+    c. GET /api/notes - should read db.json and return all save notes as json
+    d. POST /api/notes - should receive a new note to save on the request body, add it to the db.json, and return new note to the client
+      i. give each note a unique id 
+
+
+Extra :: 
+1. add the DELETE route
+    a. DELETE /api/notes/:id - should receive a query param of the id being deleted. 
+      i. Read all notes from db.json 
+      ii. remove the note with the given ID 
+      iii. rewrite the notes
