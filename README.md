@@ -52,7 +52,7 @@ http://localhost:3001/
 
 ## Usage
 
-![Alt text](../Note-taker/public/assets/images/note-taker-image.png)
+![Alt text](./public/assets/images/note-taker-image.png)
 
 ---
 
