@@ -54,6 +54,8 @@ http://localhost:3001/
 
 ![Alt text](./public/assets/images/note-taker-image.png)
 
+- [Deployed Note Taker App](https://young-crag-54739.herokuapp.com/)
+
 ---
 
 ## Credits
@@ -78,7 +80,7 @@ N/A
 
 ## Features
 
-Below is a code example of one of the express.js routes
+Below is a code example of one of the express.js routes.
 
 ```
 router.post("/notes", (req, res) => {
